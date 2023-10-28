@@ -28,9 +28,9 @@ import pic_21 from './pic_21.jpg';
 import pic_22 from './pic_22.jpg';
 import pic_23 from './pic_23.jpg';
 import pic_24 from './pic_24.jpg';
-import author_1 from './authors/author_1.jpg';
-import author_2 from './authors/author_2.jpg';
-import author_3 from './authors/author_3.jpg';
+// import author_1 from './authors/author_1.jpg';
+// import author_2 from './authors/author_2.jpg';
+// import author_3 from './authors/author_3.jpg';
 import about_image_1 from './about_image_1.jpg';
 import about_image_2 from './about_image_2.jpg';
 import about_image_3 from './about_image_3.jpg';
@@ -84,9 +84,9 @@ const images = {
     diamond,
     light_bulb,
     premium_image,
-    author_1,
-    author_2,
-    author_3,
+    // author_1,
+    // author_2,
+    // author_3,
     about_image_1,
     about_image_2,
     about_image_3,

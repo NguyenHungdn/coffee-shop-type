@@ -1,13 +1,11 @@
 import classnames from 'classnames';
-import images from '../../assets';
+import images from '../../assets/images';
 
 interface Props {
     showAble: [boolean, Function];
 }
-
 const Cart = (props: Props) => {
     const [isShow, setIsShow] = props.showAble;
-
     const handleHideCart = () => {
         setIsShow(false);
     };
@@ -16,15 +14,16 @@ const Cart = (props: Props) => {
             {isShow && (
                 <div
                     onClick={handleHideCart}
-                    className='bg-black/5 w-screen top-0 bottom-0 fixed'
+                    className='bg-black/5 w-screen top-0 bottom-0 z-10 fixed'
                 ></div>
             )}
             <aside
                 className={classnames(
-                    'fixed flex flex-col right-0 top-0 h-screen bg-gray-900 max-w-[480px] duration-200',
+                    'fixed flex flex-col right-0 z-10 top-0 h-screen bg-gray-900 max-w-[480px] duration-200',
                     {
                         'translate-x-full': !isShow,
                     },
+
                 )}
             >
                 <header className='border-b border-border-color py-[30px] px-10 flex justify-between items-center text-white'>
@@ -60,5 +59,4 @@ const Cart = (props: Props) => {
         </>
     );
 };
-
 export default Cart;

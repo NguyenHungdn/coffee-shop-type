@@ -1,4 +1,4 @@
-import images from '../assets';
+import images from '../assets/images';
 import { HeaderNav } from '../types';
 import routes from '../config/routes';
 import { Link, NavLink } from 'react-router-dom';
